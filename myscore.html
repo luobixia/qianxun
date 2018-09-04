@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myscore</title>
+    <link rel="stylesheet" href="css/myscore.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $(function(){
+            $(".nav_list li").click(function(){
+                var index=$(this).index();
+                $(this).addClass('current').siblings().removeClass();
+
+            });
+            $("#search li").click(function(){
+                var index=$(this).index();
+                $(this).addClass('s_current').siblings().removeClass();
+                $("ol").eq(index).css({display:"block"}).siblings().css({display:"none"});
+                $("ol").eq(index).addClass('data').siblings().removeClass();
+
+
+            });
+            var num = 0;
+            var timer = null;
+            function gogogo(){
+                timer=setInterval(function(){
+                    num++;
+                    if(num>4){
+                        num = 0;
+                        $(".banner").css("left","0");
+                        num = 1;
+                    }
+                    $(".banner").animate({left:-(num*747)+'px'});
+                },2000);
+
+            }
+            gogogo();
+            $(".banner").hover(function(){
+                    clearInterval(timer)
+                },function () {
+                    gogogo()
+                }
+            );
+
+            $(".b_left").click(
+
+                function() {
+                    num--;
+                    if (num < 0) {
+                        num = 0;
+                    }
+
+                    $(".banner").animate({left: -num*747+'px'});
+                });
+            $(".b_right").click(
+
+                function(){
+                    num++;
+                    if(num>3) {
+                        num = 3;
+                    }
+                    $(".banner").animate({left:-num*747+'px'});
+
+                });
+
+        });
+
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="nav_content">
+
+        <div id="logo">
+            <a href="index.html" target="_blank">
+                <span></span>
+            </a>
+        </div>
+
+        <div class="nav_list">
+            <ul>
+                <li ><a  href="intergral.html">兑换特权</a></li>
+                <li class="current"><a href="myscore.html">我的积分</a></li>
+                <li><a href="rule.html">积分规则</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div id="content">
+    <div id="introduce">
+        <div id="user">
+            <a href="#" class="btn">签到抽奖</a>
+            <p id="dails">
+
+                已连续签到
+                <span>0</span>
+                天
+            </p>
+        </div>
+        <div id="carousel" >
+            <span class="b_left"></span>
+            <span class="b_right"></span>
+            <ul class="banner">
+                <li><a href="#"><img src="img/banner01.png" alt=""></a></li>
+                <li><a href="#"><img src="img/banner02.png" alt=""></a></li>
+                <li><a href="#"><img src="img/banner03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/banner04.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/banner01.png" alt=""></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="score01">
+        
+        <div class="top">
+            
+            <span class="icon"></span>
+            <p>昨日获得积分：</p>
+            
+            <div class="score">
+            <img class="i_one" src="img/shadow.png" alt="">
+            <img class="i_two" src="img/one.png" alt="">
+            <img class="i_three" src="img/four.png" alt="">
+            </div>
+
+        </div>
+        <div class="clock">
+            <ul>
+                <li>
+                     <span class="question">
+                    </span>
+                    <p class="i_font">
+                        <strong >0</strong>分
+                    </p>
+                    <div class="speed">
+                    <p>
+                        <br>
+                        5分/小时
+                        <br>
+                        昨日登录增长
+                    </p>
+                    </div>
+                </li>
+                <li>
+                     <span class="question">
+                    </span>
+                    <p class="i_font">
+                        <strong >0</strong>分
+                    </p>
+                    <div class="speed">
+                        <p>
+                            <br>
+                            3分/小时<br>
+                            昨日搜索增长
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="question">
+                    </span>
+                    <p class="i_font">
+                        <strong >0</strong>分
+                    </p>
+                    <div class="speed">
+                        <p>
+                            <br>
+                            1分/小时<br>
+                            昨日网页访问增长
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="score02">
+        <div class="top">
+
+            <span class="icon_01"></span>
+            <p>近10天获得积分详情：</p>
+
+               <ul id="search" class="u_search">
+                   <li class="s_current i_c">在线</li>
+                   <li>搜索</li>
+                   <li>网页访问</li>
+               </ul>
+
+           </div>
+        <div>
+        <ol class="data" style="display: block;">
+            <li>
+                <p class="date">10月14号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">15号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">16号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">17号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">18号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">19号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">20号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">21号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">22号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">23号</p>
+                <div class="circle"></div>
+            </li>
+        </ol>
+
+        <ol    style="display: none;">
+            <li>
+                <p class="date">11月14号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">15号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">16号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">17号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">18号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">19号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">20号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">21号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">22号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">23号</p>
+                <div class="circle"></div>
+            </li>
+        </ol>
+
+        <ol  style="display: none;">
+            <li>
+                <p class="date">12月14号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">15号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">16号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">17号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">18号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">19号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">20号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">21号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">22号</p>
+                <div class="circle"></div>
+            </li>
+            <li>
+                <p class="date">23号</p>
+                <div class="circle"></div>
+            </li>
+        </ol>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

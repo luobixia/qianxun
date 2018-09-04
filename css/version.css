@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url("../img/bg_all.png") no-repeat center top;
+}
+#main{
+    width: 1000px;
+    /*height: 902px;*/
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    margin-top: 160px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#logo{
+    width: 330px;
+    height: 68px;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    background: url("../img/alogo.png") no-repeat 0px -112px;
+}
+nav a{
+    transition: background 0.8s;
+    -moz-transition:background 0.8s; /* Firefox 4 */
+    -webkit-transition:background 0.8s; /* Safari and Chrome */
+    -o-transition:background 0.8s; /* Opera */
+}
+nav a.one:hover{
+    background: #228bd6;
+}
+nav a.two:hover{
+    background: #c33;
+}
+nav a.three:hover{
+    background: #3aa624;
+}
+nav a.four:hover{
+    background: #c145cc;
+}
+nav a.five:hover{
+    background: #f2ca00;
+}
+nav{
+    width:100%;
+    height: 60px;
+    /*opacity: 0.4;*/
+    /*background:black;*/
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+}
+.nav_list{
+    list-style: none;
+    margin: 0 auto;
+    width: 1010px;
+    height: 60px;
+    /*border:1px solid white;*/
+}
+.nav_list>li{
+    float: left;
+    width: 200px;
+    height: 60px;
+    /*border: 1px solid red;*/
+    line-height:60px;
+    text-align: center;
+}
+.nav_list>li a{
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*test*/
+.are{
+    width: 50%;
+    border-left: solid 4px #1cadf0;
+    height:100%;
+    /*border: 1px solid blue;*/
+    position: relative;
+    left:50%;
+    margin-top:160px;
+}
+.s_icon{
+
+    /*border:1px solid black;*/
+    display: inline-block;
+    position: absolute;
+
+}
+.s_01{
+    background: url("../img/version_bg.png") no-repeat -300px -183px;
+    z-index: 2;
+    left:-18px;
+    top:-12px;
+    width: 30px;
+    height: 30px;
+}
+.s_02{
+    background: url("../img/version_bg.png") no-repeat -300px -216px;
+    z-index: 5;
+    left:-18px;
+    top:-12px;
+    width: 30px;
+    height: 30px;
+}
+.txt{
+    position: relative;
+    left:29px;
+    top:-9px;
+}
+
+.circle{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/version_bg.png") no-repeat -314px -314px;
+}
+.box1{
+    width: 380px;
+    margin-bottom: 6px;
+    position: relative;
+    left: 20px;
+    top:101px;
+    /*border: 1px solid black;*/
+}
+.righ .circle{
+    top: -10px;
+    left: -32px;}
+.righ{
+    background:url(../img/righ.png) no-repeat;
+    padding-left: 10px;
+
+}
+.right_gray{
+    background:url(../img/right_gray.png) no-repeat;
+    padding-left: 10px;
+    color:#666;
+}
+.right_gray .circle{
+    top: -10px;
+    left: -32px;
+}
+
+.content{
+    padding:24px 30px;
+
+    background: #1cadf0;
+}
+.bg01{
+    background: #1cadf0;
+    color:#fff;
+
+}
+ol{
+    list-style: none;
+}
+.content>h2 {
+    margin-bottom: 12px;
+    display: inline-block;
+    /*border:1px solid red;*/
+}
+.content>span{
+    margin-left: 5px;
+    font-size: 10px;
+    display: inline-block;
+    /*border:1px solid purple;*/
+}
+.content ol{
+    font-size: 12px;
+    line-height: 1.7;
+}
+.content ol li{
+    width: 300px;
+    padding: 0 0 10px 0px;
+    position: relative;
+}
+.content ol span{
+    padding-right: 12px;
+}
+.lef{
+    left:-424px;
+    padding-right: 10px;
+    background: url("../img/left.png") no-repeat right top;
+    color:#666;
+}
+.lef>.circle{
+    top:-10px;
+    left:412px;
+}
+/*.lef_gray>.circle{*/
+/*top:-10px;*/
+/*left:412px;*/
+/*}*/
+.bg02{
+    background: #e6e7eb;
+}
+.lef_gray>.circle{
+    top:-10px;
+    left:412px;
+}
+.lef_gray{
+    color:#666;
+    left:-424px;
+    padding-right: 10px;
+    background: url("../img/left_gray.png") no-repeat right top;
+}
+.end{
+    height: 40px;
+    width: 125px;
+    top:0px;
+    left:0px;
+    position:relative;
+    display: inline-block;
+    left:0px;
+    top: 0px;
+}
+.e_icon{
+    background:url(../img/version_bg.png) no-repeat -297px -280px;
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    /*border:1px solid purple;*/
+    top:34px;
+    left:-19px;
+}
+.e_txt{
+    position: relative;
+    top:22px;
+    color:#333;
+}

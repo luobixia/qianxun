@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>integral</title>
+    <link rel="stylesheet" href="css/intergral.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $(function(){
+            $(".nav_list li").click(function(){
+                var index=$(this).index();
+                $(this).addClass('current').siblings().removeClass();
+                $(this).children("a")
+            });
+            var num = 0;
+            var timer = null;
+            function gogogo(){
+                timer=setInterval(function(){
+                    num++;
+                    if(num>4){
+                        num = 0;
+                        $(".banner").css("left","0");
+                        num = 1;
+                    }
+                    $(".banner").animate({left:-(num*747)+'px'});
+                },2000);
+
+            }
+            gogogo();
+            $(".banner").hover(function(){
+                clearInterval(timer)
+            },function () {
+                gogogo()
+                }
+            );
+
+            $(".b_left").click(
+
+                function() {
+                    num--;
+                    if (num < 0) {
+                        num = 0;
+                    }
+
+                    $(".banner").animate({left: -num*747+'px'});
+                });
+            $(".b_right").click(
+
+                function(){
+                    num++;
+                    if(num>3) {
+                        num = 3;
+                    }
+                    $(".banner").animate({left:-num*747+'px'});
+
+                });
+        });
+
+    </script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="nav_content">
+
+        <div id="logo">
+            <a href="index.html" target="_blank">
+                <span></span>
+            </a>
+        </div>
+
+        <div class="nav_list">
+            <ul>
+                <li class="current"><a  href="intergral.html">兑换特权</a></li>
+                <li><a href="myscore.html">我的积分</a></li>
+                <li><a href="rule.html">积分规则</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div id="content">
+    <div id="introduce">
+        <div id="user">
+            <a href="#" class="btn">登录签到</a>
+            <p id="dails">
+                赚积分换特权
+                <br>
+                连续签到
+                <span>3</span>
+                天还能抽大奖
+            </p>
+        </div>
+        <div id="carousel" >
+            <span class="b_left"></span>
+            <span class="b_right"></span>
+            <ul class="banner">
+                <li><a href="#"><img src="img/banner01.png" alt=""></a></li>
+                <li><a href="#"><img src="img/banner02.png" alt=""></a></li>
+                <li><a href="#"><img src="img/banner03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/banner04.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/banner01.png" alt=""></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="list01" class="list">
+        <a class="know" href="#">了解更多</a>
+        <div class="left">
+            <h3>
+                <img src="img/pptv.png" alt="">
+                PPTV聚力会员激活码
+            </h3>
+            <div class="vip"></div>
+        </div>
+        <div class="right">
+            <a class="right01" href="#">
+                <img src="img/pptv7.png" alt="">
+                <div class="score">
+                    <strong>500</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+            <a class="right02" href="#">
+                <img src="img/pptvm.png" alt="">
+               <div class="score">
+                   <strong>1500</strong>
+                   <span>积分</span>
+
+               </div>
+            </a>
+        </div>
+
+    </div>
+    <div id="list02" class="list">
+        <a href="#" class="know">了解更多</a>
+        <div class="i_left">
+
+            <h3>
+                <img src="img/iqy.png" alt="">
+                爱奇艺VIP激活码
+            </h3>
+            <img src="img/iqy_bg.png" alt="">
+
+        </div>
+        <div class="right dis">
+            <a class="right01" href="#">
+                <img src="img/iqyday.png" alt="">
+                <div class="score">
+                    <strong>500</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+            <a class="right02" href="#">
+                <img src="img/iqymonth.png" alt="">
+                <div class="score">
+                    <strong>10000</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div id="list03" class="list">
+        <a href="#" class="know">了解更多</a>
+        <div class="i_left">
+
+            <h3>
+                <img src="img/bdc.png" alt="">
+                百度云会员激活码
+            </h3>
+            <img id="bdy" src="img/bdy_bg.png" alt="">
+
+        </div>
+        <div class="right_1 dis">
+            <a class="right01" href="#">
+                <img src="img/bdyone.png" alt="">
+                <div class="score">
+                    <strong>4000</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+            <!--<a class="right02" href="#">-->
+                <!--<img src="img/iqymonth.png" alt="">-->
+                <!--<div class="score">-->
+                    <!--<strong>10000</strong>-->
+                    <!--<span>积分</span>-->
+
+                <!--</div>-->
+            <!--</a>-->
+        </div>
+    </div>
+    <div id="list04" class="list">
+        <a href="#" class="know">了解更多</a>
+        <div class="i_left">
+
+            <h3>
+                <img src="img/txt.png" alt="">
+                百度文库VIP激活码
+            </h3>
+            <img id="txt" src="img/txt_bg.png" alt="">
+
+        </div>
+        <div class="right dis">
+            <a class="right01" href="#">
+                <img src="img/txt_day.png" alt="">
+                <div class="score">
+                    <strong>800</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+            <a class="right02" href="#">
+                <img src="img/txt_month.png" alt="">
+                <div class="score">
+                    <strong>4000</strong>
+                    <span>积分</span>
+
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+    </div>
+
+</body>
+</html>

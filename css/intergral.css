@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: "微软雅黑";
+    background: rgb(246, 248, 250);
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    /*border-bottom: 1px solid #c5cec8;*/
+    box-shadow: 3px 3px 3px #c5cec8;
+
+}
+.nav_content{
+    width: 945px;
+    height: 70px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+
+}
+#logo{
+    text-align: center;
+    height: 100%;
+    width: 245px;
+    /*border: 1px solid red;*/
+    float: left;
+
+}
+#logo span{
+    width: 243px;
+    height: 33px;
+    background: url("../img/sprite.png") no-repeat -28px 0px;
+    /*border: 1px solid black;*/
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    left: 0px;
+}
+.nav_list{
+    width: 400px;
+    height: 70px;
+    /*border: 1px solid green;*/
+    float: left;
+
+}
+.nav_list>ul{
+    list-style: none;
+    float: right;
+
+}
+.nav_list li{
+    float: left;
+    width: 120px;
+    height: 70px;
+    display: block;
+    line-height: 70px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+.nav_list li>a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #425766;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+.current {
+    border-bottom: 2px solid #ff4500;
+}
+.nav_list .current>a {
+    color: #ff4500;
+}
+#content{
+    width: 945px;
+    margin:0 auto;
+}
+#introduce{
+    width: 940px;
+    height: 218px;
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    padding: 3px;
+    float: left;
+
+}
+.list{
+
+    margin-top: 10px;
+    box-shadow: -2px 0 5px #c5cec8,0 -2px 5px #c5cec8,0 2px 5px #c5cec8,2px 0 5px #c5cec8;
+}
+
+#user{
+    float: left;
+    z-index: 2;
+    width: 180px;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    box-shadow: -2px 0 5px #c5cec8,0 -2px 5px #c5cec8,0 2px 5px #c5cec8,2px 0 5px #c5cec8;
+}
+#carousel{
+    width: 747px;
+    height: 218px;
+    /*border: 1px solid black;*/
+    /*position: absolute;*/
+    float: right;
+    /*absolute和float用会导致浮动失效，即将浮动元素设置为absolute；会导致浮动失效*/
+}
+#list01{
+    width: 940px;
+    height: 340px;
+    /*border: 1px solid black;*/
+    background: url("../img/new.png") no-repeat;
+}
+#list02{
+    width: 940px;
+    height: 340px;
+    /*border: 1px solid black;*/
+    /*line-height: 340px;*/
+
+
+}
+#list03{
+    width: 940px;
+    height: 340px;
+    /*border: 1px solid black;*/
+
+
+}
+#list04{
+    width: 940px;
+    height: 340px;
+    /*border: 1px solid black;*/
+
+
+}
+.clear{
+    clear: both;
+}
+.btn{
+    width: 156px;
+    height: 61px;
+    /*border: 1px solid black;*/
+    display: block;
+    position: relative;
+    top: 62px;
+    left: 11px;
+    text-align: center;
+    padding-top:9px;
+    background: url("../img/sprite.png") no-repeat -114px -1492px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+#dails{
+    /*border: 1px solid black;*/
+    color: #8596a2;
+    font-size: 12px;
+    font-weight: normal;
+    position: relative;
+    top:60px;
+    left: 11px;
+    text-align: center;
+    height: 40px;
+    width: 156px;
+    line-height: 150%;
+}
+#dails>span{
+    color: #ff4500;
+}
+#list01>a{
+    color: #8596a2;
+    float: right;
+    margin: 12px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.know{
+    color: #8596a2;
+    float: right;
+    margin: 12px;
+    font-size: 12px;
+    text-decoration: none;
+}
+a.know:hover{
+    color: blue;
+}
+.left{
+    width: 430px;
+    height: 216px;
+    /*border: 1px solid black;*/
+    margin-left: 55px;
+    margin-top: 40px;
+    float: left;
+}
+.left>h3 {
+    color: #425766;
+}
+.left img{
+    position: relative;
+    top:12px;
+}
+.vip{
+    width: 254px;
+    height: 142px;
+    /*border: 1px solid blue;*/
+    position: relative;
+    left:10px;
+    margin-top: 27px;
+    background: url("../img/pptv_bg.png") no-repeat;
+    margin-right: 0;
+}
+.right{
+     width: 425px;
+     height: 276px;
+     /*border: 1px solid blue;*/
+     border-left: 1px solid #e2e5e9;
+     float: left;
+     background: url("../img/prize.png");
+ }
+.right_1{
+    width: 425px;
+    height: 276px;
+    /*border: 1px solid blue;*/
+    border-left: 1px solid #e2e5e9;
+    float: left;
+    background: url("../img/prize.png") no-repeat;
+}
+.right01{
+    /*border:1px solid black;*/
+    width: 210px;
+    height: 276px;
+    display: inline-block;
+
+}
+.right01>img{
+    position: relative;
+    left: 19px;
+}
+.right02{
+    /*border:1px solid black;*/
+    width: 210px;
+    height: 276px;
+    display: inline-block;
+
+}
+.right02>img{
+    position: relative;
+    left: 12px;
+}
+.score>.right01{
+    display: inline;
+    position: relative;
+    top: 0;
+    left: 1px;
+}
+.score>strong{
+    font-size: 28px;
+    color: #425766;
+}
+.score>span{
+    font-size: 12px;
+    color: #425766;
+}
+.dis{
+    margin-left: 50px;
+}
+.i_left{
+    width: 430px;
+    height: 234px;
+    /*border: 1px solid purple;*/
+    float: left;
+    margin-top: 50px;
+}
+.i_left>h3 {
+    /*border: 1px solid black;*/
+    margin-left: 59px;
+}
+.i_left>h3>img{
+    position: relative;
+    left: 0;
+    top: 13px;
+}
+.i_left>img{
+    position: relative;
+    top: 25px;
+    left: 166px;
+    /*border: 1px solid red;*/
+}
+.i_right{
+    width: 441px;
+    height: 276px;
+    /*border: 1px solid orangered ;*/
+    float: left;
+    border-left: 1px solid #e2e5e9;
+}
+.i_left #bdy{
+    position: relative;
+    left: 62px;
+    top: 22px;
+}
+.i_left #txt{
+    position: relative;
+    top:44px;
+    left:67px;
+}
+#content{
+    padding-bottom: 100px;
+}
+#carousel{
+    overflow: hidden;
+    position: relative;
+    /*float: right;*/
+}
+.banner{
+    list-style: none;
+    /*第一个要点：添加相对自身定位对于移动来说很重要*/
+    position: relative;
+    /*第二个要点：添加ul的宽度和高度很重要*/
+    height: 218px;
+    width: 4000px;
+}
+.banner>li{
+    float: left;
+}
+.b_left{
+    width: 33px;
+    height: 64px;
+    position: absolute;
+    z-index: 100;
+    background: url("../img/sprite.png") no-repeat -238px -1871px;
+    top:77px;
+    left:10px;
+    /*border: 1px solid purple;*/
+
+
+}
+.b_right{
+    width: 33px;
+    height: 64px;
+    position: absolute;
+    z-index: 100;
+    background: orangered;
+    top:77px;
+    right:10px;
+    background: url("../img/sprite.png") no-repeat -238px -1938px;
+    /*border: 1px solid purple;*/
+}

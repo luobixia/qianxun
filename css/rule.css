@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: "微软雅黑";
+    background: rgb(246, 248, 250);
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    /*border-bottom: 1px solid #c5cec8;*/
+    box-shadow: 3px 3px 3px #c5cec8;
+
+}
+.nav_content{
+    width: 945px;
+    height: 70px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+
+}
+#logo{
+    text-align: center;
+    height: 100%;
+    width: 245px;
+    /*border: 1px solid red;*/
+    float: left;
+
+}
+#logo span{
+    width: 243px;
+    height: 33px;
+    background: url("../img/sprite.png") no-repeat -28px 0px;
+    /*border: 1px solid black;*/
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    left: 0px;
+}
+.nav_list{
+    width: 400px;
+    height: 70px;
+    /*border: 1px solid green;*/
+    float: left;
+
+}
+.nav_list>ul{
+    list-style: none;
+    float: right;
+
+}
+.nav_list li{
+    float: left;
+    width: 120px;
+    height: 70px;
+    display: block;
+    line-height: 70px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+.nav_list li>a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #425766;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+.current {
+    border-bottom: 2px solid #ff4500;
+}
+.nav_list .current>a {
+    color: #ff4500;
+}
+table{
+    margin-top: 50px;
+    border-collapse:collapse;
+    width: 100%;
+    border-color: grey;
+    background: #eff3f6;
+    border: none;
+}
+th{
+    background: #e4e7eb;
+    height: 54px;
+    border-bottom: solid 1px #d6dbe2;
+
+}
+td{
+    text-align: center;
+    height: 54px;
+    border-bottom: solid 1px #d6dbe2;
+
+}
+
+/*test*/
+.main{
+    width: 940px;
+    margin:auto;
+    /*background: white;*/
+    /*border:1px solid greenyellow;*/
+}
+.u_mian{
+    list-style: none;
+    display: inline-block;
+}
+.u_mian>li{
+    /*border: 1px solid purple;*/
+}
+
+.u_mian h2{
+    margin-top: 50px;
+    font-size: 16px;
+    /*border: 1px solid black;*/
+    font-weight: 700;
+    line-height: 200%;
+
+}
+.u_mian p{
+    line-height: 150%;
+    color:#333;
+    font-size: 14px;
+
+}
+.font{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+
+}
+.footer{
+    font-size: 12px;
+    color: #aaabab;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
